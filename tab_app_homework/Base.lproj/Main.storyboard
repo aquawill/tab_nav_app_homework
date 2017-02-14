@@ -1,108 +1,1002 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4mZ-1F-0jX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
-        <scene sceneID="hNz-n2-bh7">
+        <!--行星與星座-->
+        <scene sceneID="Eb6-eL-6y4">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e3c-w4-t4q" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="jYJ-wL-FVJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="70p-md-8lT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="6Yl-kT-aDm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zodiac_signs_zodiac_symbols_11248_1080x1920" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-Ej-R8F">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="星座與行星" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOt-Vo-iwN">
+                                <rect key="frame" x="144" y="80" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-Pq-Kvh">
+                                <rect key="frame" x="16" y="109" width="343" height="509"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">‧上昇‧
+容貌、舉止、性向 
+‧太陽‧
+人生觀、性格
+
+‧月亮‧
+情感、與女性的關係、飲食口味
+
+‧水星‧
+表達、溝通、價值觀
+
+‧金星‧
+男性欣賞異性類型、女性如何吸引異性、審美觀
+
+‧火星‧
+性、發脾氣的方式、衝動
+
+‧木星‧
+人生目標、人生哲學
+
+‧土星‧
+考驗、責任
+
+‧天王星‧
+選擇朋友、加入團體、機會
+
+‧海王星‧
+文化、精神生活
+
+‧冥王星‧
+創造、鉅變、新生、毀滅</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="行星與星座" image="second" selectedImage="second" id="W4A-hk-23f"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9e-fh-MRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1924" y="-988.15592203898063"/>
         </scene>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Navigation Controller-->
+        <scene sceneID="fWq-OH-ocR">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="4mZ-1F-0jX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IAT-C8-6Xw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xN0-0N-ANn" kind="relationship" relationship="rootViewController" id="dud-ah-QWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Her-by-QhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="-340"/>
+        </scene>
+        <!--2017星座運勢-->
+        <scene sceneID="GB5-8t-XS4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbs-fQ-XjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="k0g-va-AWX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="66" sectionFooterHeight="28" id="fUW-Jk-DJo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection headerTitle=" " id="lET-Cs-itL">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="OaN-yI-jLv">
+                                        <rect key="frame" x="0.0" y="66" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OaN-yI-jLv" id="ue6-BI-tTe">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="白羊座 (3月21日 - 4月19日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OM-GN-1r3">
+                                                    <rect key="frame" x="66" y="11" width="210" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="LeO-S6-0cT" kind="show" id="DEZ-ox-toU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="GrO-8V-eMw">
+                                        <rect key="frame" x="0.0" y="112" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GrO-8V-eMw" id="M99-cB-eBq">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="金牛座 (4月21日 - 5月21日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4G-fm-MtM">
+                                                    <rect key="frame" x="67" y="11" width="209" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="vML-ta-FPE" kind="show" id="U8l-Zk-t1c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="OQd-Hk-H0C">
+                                        <rect key="frame" x="0.0" y="158" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OQd-Hk-H0C" id="VhW-53-Kyz">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="雙子座 (5月22日 - 6月21日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW4-m3-EhU">
+                                                    <rect key="frame" x="65" y="11" width="212" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Qag-d1-yRK" kind="show" id="L1E-zm-ZED"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zwj-l2-Y5V">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zwj-l2-Y5V" id="CWB-La-OE3">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="巨蟹座 (6月22日 - 7月22日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7Y-8k-Jza">
+                                                    <rect key="frame" x="65" y="11" width="213" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hK9-c4-FUc" kind="show" id="PmX-i5-jRj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bi4-Kz-4dJ">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bi4-Kz-4dJ" id="Ena-8U-Rth">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="獅子座 (7月23日 - 8月22日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTy-DT-f7U">
+                                                    <rect key="frame" x="64" y="11" width="214" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="S4M-7Q-mZl" kind="show" id="Cik-7P-cUS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="iHH-zc-OHz">
+                                        <rect key="frame" x="0.0" y="296" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iHH-zc-OHz" id="mUq-GN-Gog">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="處女座 (8月23日 - 9月22日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSa-gF-PsC">
+                                                    <rect key="frame" x="64" y="11" width="215" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8GF-Fq-45c" kind="show" id="Tex-J4-ceK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="YBt-rq-RO2">
+                                        <rect key="frame" x="0.0" y="342" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YBt-rq-RO2" id="lV3-40-qoo">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天秤座 (9月23日 - 10月23日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYz-mo-p4A">
+                                                    <rect key="frame" x="60" y="11" width="223" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3Aj-GK-Ovn" kind="show" id="T4p-Vs-5kJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="TTj-TI-N5c">
+                                        <rect key="frame" x="0.0" y="388" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TTj-TI-N5c" id="aNo-0i-769">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天蠍座 (10月24日 - 11月21日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6p-aK-awk">
+                                                    <rect key="frame" x="59" y="11" width="224" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="UmZ-sm-wMS" kind="show" id="kgt-RA-3ge"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="W6w-02-GV5">
+                                        <rect key="frame" x="0.0" y="434" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W6w-02-GV5" id="PuM-eh-Vwe">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="射手座 (11月22日 - 12月20日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkG-Uq-Ygz">
+                                                    <rect key="frame" x="58" y="11" width="226" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zjc-lG-x6A" kind="show" id="KuF-d2-8AB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Lom-sY-oCf">
+                                        <rect key="frame" x="0.0" y="480" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lom-sY-oCf" id="5Xb-aR-GK0">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="魔羯座 (12月21日 - 1月20日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5P-UG-Gfl">
+                                                    <rect key="frame" x="63" y="11" width="216" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1by-bw-71o" kind="show" id="QWO-n9-RV9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="9lu-fm-aMy">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9lu-fm-aMy" id="ynd-5H-Wwe">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="水瓶座 (1月21日 - 2月18日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-Oh-3KY">
+                                                    <rect key="frame" x="68" y="11" width="207" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hiO-NJ-Lxt" kind="show" id="1DA-YV-LlV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="oig-MZ-RJH">
+                                        <rect key="frame" x="0.0" y="572" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oig-MZ-RJH" id="FWm-sW-W5w">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="45.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="雙魚座 (2月19日 - 3月20日)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-W3-ep0">
+                                                    <rect key="frame" x="65" y="11" width="212" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GB9-OM-msj" kind="show" id="bMV-lY-Ofz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="k0g-va-AWX" id="KIa-mI-flb"/>
+                            <outlet property="delegate" destination="k0g-va-AWX" id="dal-ij-vED"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="2017星座運勢" image="first" selectedImage="first" id="hSe-xi-JeI"/>
+                    <navigationItem key="navigationItem" title="2017星座運勢" id="2ym-Ko-Txp">
+                        <barButtonItem key="backBarButtonItem" title="2017星座運勢" id="MQg-M3-vbK"/>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1831" y="-59"/>
+        </scene>
+        <!--白羊座-->
+        <scene sceneID="fTp-Rn-6LO">
+            <objects>
+                <viewController title="白羊座" id="LeO-S6-0cT" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="77E-E3-X16"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tlh-tD-d5y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="iwt-ED-InI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPL-d3-U54">
+                                <rect key="frame" x="16" y="85" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">白羊座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9TO-lz-CDa">
+                                <rect key="frame" x="16" y="114" width="343" height="533"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">白羊座進入2017年，整體運勢一般，你會感到少許壓力，很難掌控生活中發生的事情，可支配和利用的資源在慢慢減少，有時候還會陷入被動的境地。幸運的是，今年上半年會是比較好把握的階段，木星的運行軌跡將給你帶來良好的狀態，即便遇到困難，只要主動積極地應對，也能夠將困難化解。2017年裡，你的人氣和知名度在水星的作用下開始上揚，人脈將成為你最好的武器，足以讓你消除內心的無助和迷茫。然而白羊座們在這一年仍需要對自己有一個清晰客觀的認知，包括個人能力、交際能力等，給自己一個正確的定位將更有利於未來的發展。
+
+上半年十分關鍵，雖然這是較好把握的時段，但這段時間你會在忙碌中度過，某些重要事務由你來親自處理效果會更好，在此過程中你的能力和積極的態度將會得到上級與同事的認可。同時你在生活中十分愛管家人、朋友的事情，因此上半年你註定是閒不下來的。
+
+白羊座們需要注意的是，獨攬所有的任務對你來說並不是什麼好事，如果事無巨細都扛在自己的肩上，這將會消耗你太多的精力，同時也會引發許多棘手的事情，尤其是同事的惡意使絆，使你一不小心就會陷入讓人焦頭爛額的困境中。對於管理階層的白羊座來說，凡事能夠親力親為固然是好事，也有利於你掌控大局，但一個人的力量是有限的，不妨多放手讓下屬奉獻自己的智慧和才能，培養更多的人才，將有利於團隊的壯大和成長。
+
+2017年下半年木星進入第八宮，意味著你有機會通過非工作方面獲利，如投資股票、基金等方面。而木星是射手座的守護星，木星在第八宮的位置也會給白羊座帶來良好出國運，這對於有意向拓展海外市場的白羊座朋友來說十分有利，尤其適合出口貿易和海外投資。不過要小心因出國旅遊而引發的意外事故，在此之前不妨為自己購買保險，保障人身安全。
+
+今年一整年冥王星都會在你的官祿宮運行，有可能會給你帶來工作上的危機，職場上將出現小人環繞的情形，生活中對你不滿的聲音日益增強，你管理的下屬也存在背叛你的人。冥王星的力量是毀滅性的，這將意味著你的敵對力量極其強大，你的競爭對手或者對你不利的人都具備一定的實力，在開展反擊之前，你首先需要反省自己的不足之處，並提升自己的力量，保證有足夠的籌碼戰勝對方。
+
+健康方面也需要留意，這一年身體狀況不佳，容易受到小病小痛的困擾，若發現身體出現異樣，應儘快就醫，以免錯過最佳治療時間，木星的守護會給你帶來良好的醫療運勢，譬如會遇到醫術高超的醫生，或巧遇精準的醫療資源，這些有利條件有助於你儘快擺脫病魔。另外，白羊座今年在精神方面承受的壓力較大，需學會釋放壓力，不要讓身體過勞。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjg-Wh-jp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6136.8000000000002" y="938.68065967016503"/>
+        </scene>
+        <!--金牛座-->
+        <scene sceneID="Br6-wc-3ns">
+            <objects>
+                <viewController title="金牛座" id="vML-ta-FPE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RqV-dI-bIZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nY-oB-aJX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9KU-YT-T2a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asx-0B-5vN">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">金牛座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pES-W2-0VR">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年金牛座將承受繼續感受到土星帶來的壓力，你生活的軌跡並沒有太大的改變，全年整體運勢有喜有憂。今年大部分時間裡，金牛座們常常固步自封，這種自閉的狀態在海王星的影響下將表現得更加明顯。
+
+然而，生活如逆水行舟，不進則退，2017年水星的四次逆行將會給你的生活帶來衝擊，你必須勇敢地迎難而上。4月份水逆的影響力尤為猛烈，且帶來的後果不可小視，這場暴風雨是每個金牛都必須經歷的，要做好充分的準備迎接這一波的困難。
+
+凡事都有兩面性，如果金牛們能夠轉換角度看待問題，這將會是一次很棒的開始，同時也是鍛鍊自己、提升技能、開創新篇章的好機會。
+
+2月6日至6與8日，木星的逆行也會讓金牛座重新審視人生，木星的運行軌跡會讓你感受到事物之間的密切聯繫，以前斷章取義、以偏概全的態度在此刻驟然改變，這種良性轉變對今後的發展極為有利。不得不說，此時你的觀察能力明顯提升，抓住機會的敏感度也異常優秀，若能趕在4月6日土星逆行之前對工作做好詳細的計劃和準備，那麼在事業上將會獲得飛躍性地突破。
+
+4月6日至8月24日期間，土星在射手座逆行的軌跡會讓你在生活中充滿緊張感，與你敵對的勢力開始顯現，這股勢力會讓你感到寸步難行。這段時間你比較容易樹敵，可能會遇到下屬背叛、朋友反目、小人暗傷等情況。若身邊的某些人對你態度不友善，建議你避開他，儘量不要與他發生正面衝突。若你對合作夥伴懷有質疑、不信任的態度，那麼請相信自己的直覺，儘早終止合作關係為好。
+
+健康問題來源於生活的壓力，海王星的位置會導致金牛座們的心理壓力負荷過大，容易患上一些神經系統的疾病。不要太過緊張，幸運之星木星會在逆境中給你帶來良好的貴人運，他們能夠在關鍵時刻幫助你度過難關，指引你走向正確的道路。2017年是金牛座備受考驗和洗禮的一年，你將會發現自己在面對困難時爆發出來的強大潛力，看到一個新的自我。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2B-C3-VSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="5420" y="938.68065967016503"/>
+        </scene>
+        <!--雙子座-->
+        <scene sceneID="Ron-Oc-9V8">
+            <objects>
+                <viewController title="雙子座" id="Qag-d1-yRK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dfq-sV-0tk"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJH-D6-SPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QQ9-F6-4Uh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-Nr-HNC">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">雙子座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-HL-Cvt">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年上半年木星落在雙子座的第四宮，這將會是一個新的起點，在這段時間內所發生的一切，如轉換工作職位、改變想法等，這些都是正常的，木星將驅使你主動改變現狀，開展一段新的旅途；部分雙子座則會將心思回歸到家庭當中，主動承擔起家庭的重任，並致力於修復家庭成員之間的關係；而部分雙子座則仍然我行我素，慢慢享受一個人的生活。不管你是哪類雙子座，新的一年裡，你都會逐漸發生變化，迎來一個嶄新的自我。
+
+木星從2月6日至6月8日開始逆行，上半年的大部分時間裡，你需要操心的事情還很多，你現在的處境也並不風光，身邊存在著一股力量壓制著你，使得你的才華無處施展，此時不如停下腳步重新調整自己，開闢更好的路線和計劃。若有機會更換新的環境，不妨大膽一試，或許會有好的結果。不論是另起爐灶，亦或是轉行跳槽，都可以大膽嘗試，幸運的木星將會為你的成功改變保駕護航，前提是你要做好充分的準備。
+
+下半年將是好運來臨之際，這樣的好運實際上要從6月9日木星在天秤座順行開始算起，這個星位讓雙子座魅力四射、大放光彩，你將迎來一段備受矚目和重視的美好時光。在經歷過上半年的壓抑之後，下半年對於雙子座來說無疑是「久旱逢甘霖」，你需要用積極的態度和自信去展現最好的自己，讓身邊的人由衷地為你鼓掌！
+
+顯而易見，木星是一顆幸運之星，雖然給雙子座帶來壓力，但同時也帶來好運，介紹了木星的影響，接下來我們要談談土星了。土星在雙子座的遷移宮霸占已久，相信雙子們在去年就已經很明顯感受到了土星的負面影響，今年土星依然在這個宮位運行，給雙子座帶來很多問題，如經常要奔波勞累、費力不太好的事情增多等，總之，讓人鬱悶的事情層出不窮。
+
+另外，水星的逆行會給雙子座們的工作和生活帶來困擾，在水逆期間，雙子們總是磕磕碰碰，紕漏百出，人際關係也不盡人意。雙子座的人請注意以下水星逆行時間表，若有合約、旅行、搬家等重大事件，應儘量避開這些時間段。
+
+一、1月1日-1月7日；共7天。（1.1-1.4水逆於摩羯座，1.5-1.7水逆於射手座）
+
+二、4月10日-5月3日；共24天。（4.10-4.20水逆於金牛座，4.21-5.3水逆於白羊座）
+
+三、8月13日-9月4日；共23天。（8.13-8.31水逆於處女座，9.1-9.4水逆於獅子座）
+
+四、12月3日-12月22日，共20天。（水逆於射手座）
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PdG-zj-zv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4652" y="938.68065967016503"/>
+        </scene>
+        <!--巨蟹座-->
+        <scene sceneID="rzk-v2-y7y">
+            <objects>
+                <viewController title="巨蟹座" id="hK9-c4-FUc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ndi-m1-2Ab"/>
+                        <viewControllerLayoutGuide type="bottom" id="oI1-od-OgL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6d-3S-Hy4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-TB-gzG">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">巨蟹座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="htr-yo-iBa">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">巨蟹座2017年的運勢並不理想，「壓力」成為了一整年的關鍵詞，生活壓力、工作壓力、學習壓力貫穿了一整年，困難、挫折、煩悶、無奈等這些字眼對於今年的巨蟹座來說並不陌生，不過，生活希望會在巨蟹座的努力之下慢慢點燃，巨蟹們請用樂觀愉悅的心情來面對生活，用堅強的毅力抵擋困難。
+
+今年最糟糕的情況，會是工作方面的打壓，極有可能會因為犯錯而被迫離職，還有可能會失去升遷的機會，土星的相位讓你在職場上難以展現才華，事業進入一個停滯期，在求職運、跳槽運、升遷運十分不理想的情況下，巨蟹們顯得有些無計可施？所幸的是吉星木星會幫助你遏制住土星的猖狂，但仍需要你付出雙倍的努力，才能真正戰勝困難，逆流而上。
+
+年中木星的退行會給巨蟹座們帶來福音，木星會善意指引你積極走出去，與此同時，你和老同學、老朋友會有密切聯繫，雖然可能會耗費你不少時間，但在這個過程中，你也會獲得一些寶貴意見，這些意見和建議對你來說非常有利，若能引以為用，將有希望走出事業的瓶頸期。
+
+不過這段時間你會變得非常懷舊，並且十分容易傷感，尤其是對於那些還未徹底走出失戀之苦的巨蟹座，你非常容易陷在美好回憶里無法自拔，對曾經戀人的思念會讓你感到心情失落。「過去的心結」在你的內心再次打結，若不想繼續被這樣的痛苦纏繞，那麼就大步向前走，試著投入到一段新的戀情中去吧！
+
+水星的力量將在11月份的時候發揮得淋漓盡致，這段時間你會有好的學習運勢，如有蟹子們想要提升學習成績，或者提升專業技能，不妨報名參加一些培訓班，能夠達到事半功倍的效果。然而有利於學習的時間是非常短暫的，除了這段時間，巨蟹座們在其他的時間段都會感到學習非常吃力，如果身邊有認識的學霸，不妨虛心向他們請教，如此一來，你們的關係也會變得更加友好。
+
+關於健康，巨蟹座的身體狀況仍然逃不過「壓力」的懲罰，生活各方面的壓力會帶來一些隱患，舊傷復發，或是新的疾病都極有可能在這一年內發生，用「身心俱疲」這個詞來形容巨蟹座的2017年的健康狀況會更加貼切一些。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XU-Z8-I8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3933.5999999999999" y="938.68065967016503"/>
+        </scene>
+        <!--獅子座-->
+        <scene sceneID="DSQ-vY-FYW">
+            <objects>
+                <viewController title="獅子座" id="S4M-7Q-mZl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x63-Te-JmR"/>
+                        <viewControllerLayoutGuide type="bottom" id="sRp-98-gej"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sMe-nO-9dJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcf-I9-SJP">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">獅子座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-UL-ICt">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">過去獅子座在工作、生活中總是能憑藉自己的才能贏得掌聲，你掌握著超越他人的技巧。但進入2017年，土星來了，它將會給你的生活帶來什麼影響？
+
+土星帶來的影響是負面的，主要集中在今年4月-8月份，這段時間獅子座們將會有切身的體會，因為土星會給你帶來挫敗感。你曾經的自信和自尊在此時蕩然無存，尤其是感情方面，愛情問題對你打擊最大，你可能會經歷一段刻骨銘心的失戀，或是被婚姻生活傷得遍體鱗傷，這些都是土星對你考驗。
+
+土星在射手座的位置也影響著獅子座和家人的關係，你可能會因為工作、學習方面的需要而遠走他鄉，因此與家人的在一起的時間減少，家庭關係也在漸漸疏遠，對於已婚者來說，影響的則是自己與伴侶的關係，或者是影響著你與孩子的親密度。
+
+不過土星在遷移宮能給獅子座們帶來良好的旅行運，上半年會有幾次愉快的旅行，也會在出差途中收穫頗豐。來到下半年，旅行運將更加強勁，對於工作依然忙碌的獅子座，旅行的模式則是和工作捆綁在一起，通常以出差的形式表現出來，但頻繁的出差會讓你感覺奔波勞累。
+
+獅子座們2017年人際關係欠佳，尤其是工作上常遭人有意針對，職場上的人際關係問題可從土星那裡找到原因。土星這顆星體時刻帶來生活和工作的困難，獅子座們今年工作上未能找到展現自我的機會，或者是失去支撐的重心，尤其是土星和冥王星的不良相位讓這一切雪上加霜。
+
+不過象徵幸運和富足的木星會是你幸運之星，雖然獅子座在生活上受制於土星，但木星的幸運元素會逐漸幫助你擺脫土星的束縛，自信和輕鬆的心情會在木星的幫助下慢慢恢復，尤其到了下半年，獅子座的運勢開始好轉，從磨難到享受，這將是獅子座2017年最真切的感受。
+
+當生活狀況漸漸轉好，業績取得突破的時候，獅子座將開始獲得物質和精神上的滿足，你的行事作風將被更多的人接受。若你的抗壓能力夠強，今年即使受到土星的壓迫，也能夠在逆境中享受到勝利的果實，並且積累到許多寶貴經驗。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oY-qs-AHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3268" y="938.68065967016503"/>
+        </scene>
+        <!--處女座-->
+        <scene sceneID="5nP-cL-hTa">
+            <objects>
+                <viewController title="處女座" id="8GF-Fq-45c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dvs-Wg-pBN"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Lf-2f-Yhp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IwK-YD-b4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-WB-hMb">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">處女座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N7B-hB-m39">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年上半年是一個調整期，木星落在交友宮，處女座們可在人際交往中獲得有用的信息，將這些信息作用於工作生活中，一定會受益匪淺。過去你承受的壓力在今年上半年會逐漸得到釋放，可通過參加社交、與友人溝通等方式使得心靈變得輕鬆愉悅。
+
+2017年上半年是一個修正期，木星的相位會為你創造糾正錯誤的機會，如果你曾做過一些隱晦，讓自己良心不安，或者是傷害某人而後悔的事情，來到2017年你將迎來一個坦然面對的機會，你的形象在朋友中也會得到一定程度的提升。你會發現，生活中關心的人漸漸變得多了起來，他們會在你失意的時候問候你，傾聽你的心聲，幫助你走出陰霾。
+
+下半年6月8日木星結束了逆行，開啟了你對金錢的渴望之心，擴張的木星會讓你變得更有進取心。很多處女座會萌生投資、升職、掌權、創業的慾望，你開始為自己的未來擔憂和著想，而下半年能夠證明你存在的價值也正是收入的高低。木星還會帶給你贊助商、招標中標等良好的運氣，並且不需要花費太多的心思就能夠贏得機會。
+
+實實在在的物質生活會讓處女座有安全感，除了通過努力獲得的成功，獲得頭銜、嘉獎、讚賞、享受勝利的果實也會讓處女座感到十分欣慰。部分處女座可能會在物質享受上花大錢，或者是經常出入一些高消費的場所，善意地提醒一下處女座朋友們，若有閒錢，不妨在自己熟悉的領域裡加大投資，會獲得意想不到的收穫。
+
+越靠近年底，就越讓人期待，回首一整年的歷程，你會有一種既心酸又驚喜的感覺，心酸的是這一切都來之不易，驚喜的是你完成了一次完美的蛻變。願處女座們能夠明白自己是幸運的，木星帶給你的好處絕對超過壞處，所以，請不要固步自封，開拓自己的思維和視野將讓你在更方面都更上一層樓。
+
+需要謹記的是，即使木星帶來了諸多好處，也不能因此而飄飄然，它的存在是為了讓你變得更加完美。因此，若此刻的你正處在人生的低谷，請不要氣餒，在經歷煎熬之後，你將會脫胎換骨，走向人生的另一個高峰。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0P-9k-RZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2605.5999999999999" y="938.68065967016503"/>
+        </scene>
+        <!--天秤座-->
+        <scene sceneID="5ec-9l-z3N">
+            <objects>
+                <viewController title="天秤座" id="3Aj-GK-Ovn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dpD-Z1-lUw"/>
+                        <viewControllerLayoutGuide type="bottom" id="m35-jG-48E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TE5-QZ-lFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-fl-KNw">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">天秤座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-JT-qkJ">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年木星的帶來的幸運能量讓天秤座充滿動力，今年你想要的自由，想要實現的目標都會在木星正面作用下一步一步去實現，你會開創新的生活，也有機會去遠方旅行，以往想做的事情將會在今年勇敢的邁出腳步。
+
+木星給你自由，但並不是讓你任性而為，土星、水星和海王星帶來的負能量尚未褪去，並且正在洶湧襲來，你在2017年一整年裡仍然是忙碌的，事業、愛情、人際等方面都需要你用心經營。
+
+今年4月份，水星的逆行會牽引出一些舊的問題，過去發生的不好事情可能會在這個月份重新上演，曾經已經解決的困難到了這個月又再次爆發。悲劇重演是許多人都不想去面對的事情，尤其是那些讓自己一度焦頭爛額的事。然而土星也不會放過這次攪局的機會，這顆行星會將事態加重，並且土星在遷移宮的位置會將這些麻煩擴大，讓你手忙腳亂。所以說今年木星還你自由，但你不能任性而為，你仍然要做好面對困難的準備，否則一切將會徒勞。
+
+今年天秤座們也不能做一些觸犯法律、缺失道德、見不得人的事情，否則會很容易被發現。更不能做一些與法律打擦邊球的事情，千萬不能為了個人私利而鑽法律空子或者侵占公家的利益，貪圖蠅頭小利者難以成就大業。
+
+海王星主要影響天秤座的健康，今年你的心靈非常需要得到撫慰，因為海王星讓你恐慌，讓你逃避現實，讓你變得膽小。因此天秤座需要一片凈土，好好安放受到驚嚇的心靈。當然也不必太過緊張，木星給你灌輸的是正面能量，讓你的身心得到舒緩，身體狀況慢慢得到調整。並且木星也會給你帶來良好的人緣，增強你的人氣，人緣變好運勢自然也在慢慢提升，天秤們若能踏實走好每一步，生活將會變得更美好。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5c-QJ-sD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.5999999999999" y="938.68065967016503"/>
+        </scene>
+        <!--天蠍座-->
+        <scene sceneID="XRd-H5-Xcb">
+            <objects>
+                <viewController title="天蠍座" id="UmZ-sm-wMS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FEI-0E-zqq"/>
+                        <viewControllerLayoutGuide type="bottom" id="uXr-eN-o7d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hS3-9C-3JF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujU-AA-fvd">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">天蠍座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TzC-0s-50F">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">冥王星守護下的天蠍座個性比較獨立，總是獨來獨往、我行我素。進入2017年，木星為你搭建了一個較好的人際網絡，你的人緣在這一年明顯提升。天蠍座今年會接觸到不同的人和事，也會參加各種各樣的活動，社交活躍的你將告別過去孤軍作戰的生活和工作模式。
+
+這一年天蠍座受火星的影響也比較大，1月至3月火星在白羊座(1月29日—3月9日)，天蠍座渴望有展現自我、鍛鍊獨當一面的機會，火星注入體內也讓天蠍座富有勇氣和活力，需要注意的是火星的能量太過強大，甚至有失控的情況發生，遇事多忍耐，不可魯莽衝動。健康上謹防利器、火電傷害。
+
+3月10日—4月21日火星落在財帛宮，天蠍座們開支巨大，有衝動消費，大筆投入的現象，對於想要投資的項目，需要謹慎評估風險和市場真實的接受程度，還需看自己的資金情況在做出決定，不可盲目投資，以免造成虧損。
+
+4月22日—6月4日火星在兄弟宮順行，家庭成員關係融洽，並得到實質性的幫助，如資金、人力的上的支持等。家庭關係緊張的天蠍座也會有所改善，生活溫馨。
+
+6月5日—7月20日火星在田宅宮順行，這是一個與土地、房屋、不動產有關的宮位，若有閒錢者不妨在這段時間進行房產投資，可降低不少投資成本，並且能夠在短期內賺取差價。火星在這個宮位不利於天蠍座與家庭的關係，前期好不容易修復了自己與家庭的關係，到了個時候又開始遭受衝擊。
+
+7月21日—9月5日火星進入子女宮，天蠍座們與子女之間的關係變淡，你對孩子的態度過於強硬，會逼孩子們做一些他們並不願意做的事情，而你的子女在這段時間也比較叛逆，很難管教，令你十分頭疼。未有子女的天蠍座則容易把精力放在享樂、運動之中。
+
+9月6日—10月22日火星落在處女座，你專注於學習、工作，迫切地想要提升自己的能力。不過這段時間在職場上容易與同事發生不愉快的事情，火星的力量也可能會讓你容易發生意外，或是內分泌失調等症狀。
+
+10月23日—12月9日火星來到天蠍座的婚姻宮，這個宮位與交友有關，你將會積極拓展人脈，對異性也比較主動，此時桃花正旺，有利於單身天蠍座尋覓良緣。
+
+12月10日—12月31日火星進入疾厄宮，這時候健康指數下滑，身體狀況不佳，容易被小病小痛困擾，要謹防意外災害。此時財運較弱，會有財來財去的情況出現。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHO-R1-8gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="938.68065967016503"/>
+        </scene>
+        <!--射手座-->
+        <scene sceneID="uyb-te-480">
+            <objects>
+                <viewController title="射手座" id="Zjc-lG-x6A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sUv-zd-Pjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="kTz-pf-pco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4lC-9G-B9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14u-ME-Y1b">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">射手座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uqT-fc-d0B">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年，射手座身體有勞累疲乏之感，心理承受壓力較大，但不可否認的是，上半年在守護星木星的庇護下，射手座人際關係甚好，貴人運也不錯。木星的力量會幫助你提升一個台階，包括升遷、加薪、增加知名度等。射手座自身也會收起貪玩之心，開始專注於事業、學業，而運勢也會起到推波助瀾之效，部分射手座也進入買房買車、結婚生子、創業的階段，今年是射手座的起飛年。
+
+射手座也會刻意想要進入某個領域，或者是某個圈子，對於你從前很排斥的事物，到了這一年，在木星的作用下，你開始轉變角度，從美好的一面去審視事物，視野和胸懷變得更加廣闊。這些改變是良好人生的開始，也是新的起點。不過部分射手座急於求成或者野心超越自己的能力範圍，過分信任自己在新的領域裡的掌控力，最終換來失敗的結果。
+
+木星會提高射手座的聲望，讓你在新領域中被人們熟知，但你必須無條件接受土星、水星和火星帶來的附加條件，要撐得起場面，放得下面子，改得了錯誤，頂得住壓力，才能在新領域中開創新局面。過去的你犯了許多錯誤，但木星的力量會讓你敢於承擔和面對，而你的努力和改變也能夠讓人刮目相看。
+
+土星在射手座的位置會給你帶來阻礙，雖然木星賜予了你強烈的自我意識，但土星的負面影響力仍然存在，加上今年水星有發生四次逆行，導致射手座的生活受到影響。土、水這兩顆行星都會讓你有苦難言，這一年你會十分忙碌，你希望自己能夠強大一點，承擔更多的家庭責任，但往往是這份責任讓你變得委屈而無處宣洩。
+
+不過，在吉星木星的安排下，會給射手座帶來精神導師，身邊良好的氛圍也讓你緊繃的神經得到舒緩，周圍人士的經驗和建議也能夠成為你人生的路標，只要你願意接納，敞開心扉與他人交流，你也會遇到一些資深人士，並且他們也願意幫你一把。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZYY-0A-OTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520.79999999999995" y="938.68065967016503"/>
+        </scene>
+        <!--魔羯座-->
+        <scene sceneID="1ye-er-teA">
+            <objects>
+                <viewController title="魔羯座" id="1by-bw-71o" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7wU-Lb-hlz"/>
+                        <viewControllerLayoutGuide type="bottom" id="nKB-Uh-zlf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ngY-k7-bdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9c-Tv-iKC">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">摩羯座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pcs-vp-yZr">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年，射手座身體有勞累疲乏之感，心理承受壓力較大，但不可否認的是，上半年在守護星木星的庇護下，射手座人際關係甚好，貴人運也不錯。木星的力量會幫助你提升一個台階，包括升遷、加薪、增加知名度等。射手座自身也會收起貪玩之心，開始專注於事業、學業，而運勢也會起到推波助瀾之效，部分射手座也進入買房買車、結婚生子、創業的階段，今年是射手座的起飛年。
+
+射手座也會刻意想要進入某個領域，或者是某個圈子，對於你從前很排斥的事物，到了這一年，在木星的作用下，你開始轉變角度，從美好的一面去審視事物，視野和胸懷變得更加廣闊。這些改變是良好人生的開始，也是新的起點。不過部分射手座急於求成或者野心超越自己的能力範圍，過分信任自己在新的領域裡的掌控力，最終換來失敗的結果。
+
+木星會提高射手座的聲望，讓你在新領域中被人們熟知，但你必須無條件接受土星、水星和火星帶來的附加條件，要撐得起場面，放得下面子，改得了錯誤，頂得住壓力，才能在新領域中開創新局面。過去的你犯了許多錯誤，但木星的力量會讓你敢於承擔和面對，而你的努力和改變也能夠讓人刮目相看。
+
+土星在射手座的位置會給你帶來阻礙，雖然木星賜予了你強烈的自我意識，但土星的負面影響力仍然存在，加上今年水星有發生四次逆行，導致射手座的生活受到影響。土、水這兩顆行星都會讓你有苦難言，這一年你會十分忙碌，你希望自己能夠強大一點，承擔更多的家庭責任，但往往是這份責任讓你變得委屈而無處宣洩。
+
+不過，在吉星木星的安排下，會給射手座帶來精神導師，身邊良好的氛圍也讓你緊繃的神經得到舒緩，周圍人士的經驗和建議也能夠成為你人生的路標，只要你願意接納，敞開心扉與他人交流，你也會遇到一些資深人士，並且他們也願意幫你一把。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3m-we-uSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="938.68065967016503"/>
+        </scene>
+        <!--水瓶座-->
+        <scene sceneID="uUY-Ez-KWb">
+            <objects>
+                <viewController title="水瓶座" id="hiO-NJ-Lxt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0SV-fy-JFJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kbp-9J-5Ur"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGr-dD-5Xo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-nh-wRG">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">水瓶座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-24-Iof">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年初（1月29日-3月9日）火星落在命宮內，水瓶座體內將充滿了能量和行動力，充沛的精力將驅使你大膽地追求理想。火星使水瓶座富有開創、自我肯定的精神，並且具備良好的領導、組織能力。
+
+火星在命宮的位置也代表水瓶座極具進取、占有和侵略性，你可能會變得非常衝動、自我、任性，對於你認定的事情，就會不顧後果的去實行，並且會為了達成目標而有意或者無意中傷害他人的利益。
+
+另外火星在命宮的位置致使水瓶座容易失去耐心，具有暴力傾向，會通過暴力的手段達成目標。因此，受這個星象影響的水瓶座做任何事情都要三思而行，避免做出無法挽救的事情。
+
+火星還會引發健康方面的問題，衝動的個性可能會導致你常常陷入與人爭吵甚至鬥毆中，導致出現紅傷事故。火星位於命宮也會致水瓶座容易發高燒、咽喉發炎等病症。年初這段時間你也可能有修正面容的衝動，如整形、護膚、微創等，建議不要輕易進行大幅度地整形，畢竟需要承擔的風險太大。另外還需留意關節、頭部、面部受傷。
+
+年中（4月-8月）土星在射手座逆行，水瓶座在各方面的計劃都應當掌握好速度，不可急於求成，以免功敗垂成。土星的逆行雖然會讓你減緩腳步，也有可能會打亂你的計劃，但恰好也給了你一個喘氣的機會，這時你應該可以清楚地看到自己在處理事情上存在的不足，並能夠找出錯誤的地方，及時彌補漏洞。從這個角度來看，土逆帶來的也並非全是壞事。
+
+年底木星落在天蠍座，此時的水瓶座變得非常聰明機警，具有探索奧秘的強烈慾望，關於靈魂、心理、偵查、推理等方面的才華凸顯出來。你有著強大的感受力和精準的直覺，這些優勢有利於你抓住機遇拓展事業。洞察能力極強的水瓶座在深入別人的內心世界非常厲害，你的人緣也會因此而提升。由於水瓶座對私密之事興趣濃厚，導致了你有侵犯他人隱私的可能性，並在無意中傳播是非，這一點自然而然也就成為了水瓶座今年需要修正的課題。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zx-WK-1t8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906.39999999999998" y="938.68065967016503"/>
+        </scene>
+        <!--雙魚座-->
+        <scene sceneID="xoj-f3-PkR">
+            <objects>
+                <viewController title="雙魚座" id="GB9-OM-msj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80B-6F-PEL"/>
+                        <viewControllerLayoutGuide type="bottom" id="yav-Bo-PtB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YXD-Wl-iOo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js0-no-mAK">
+                                <rect key="frame" x="16" y="85" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">雙魚座2017年整體運勢
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5vr-iT-9Hr">
+                                <rect key="frame" x="16" y="121" width="343" height="526"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">2017年海王星落在雙魚座，也就是回歸到本位宮的位置，行星的力量將發揮到極致，因此雙魚座的整體運勢較佳。海王星回到自己的宮位，意味著雙魚座在今年將更容易達成目標，並獲得物質、精神上的滿足。
+
+雙魚座是具有想像力和創造力的星座，當海王星回歸到雙魚座，代表雙魚座在藝術方面的細胞被全面激活，從事音樂、廣告、繪畫、設計、攝影等藝術行業的雙魚座而言將更容易獲得名氣和成功。此外，正因為這種想像力的趨勢，導致雙魚座容易迷失在美妙和享受的夢境之中，亦或是迷失在極端的情感、思緒中。
+
+我們不能一味地認為行星回歸本位宮帶來的就全部是好運，正因為行星回歸本位宮時，星座獲得的力量將發揮至極，所以從另外一個角度來看，也會出現物極必反的情況。海王星實際上是一顆潮濕的陰性星曜，而雙魚座是水相星座，當海王星落在雙魚座，會造成雙魚座的人變得神秘而沉默。此時的你對身邊的人都會分外警惕，你時刻在保護著內心的隱私。於是你在與人交往中缺乏足夠的真誠和坦白，更多的是謊言、慌亂和偽裝，而這些表現往往容易被人察覺。
+
+所幸，木星在雙魚座的交際宮帶來的是人緣，這顆吉星促成你積極開拓精神領域，使得感受力增強，這種改變讓你能夠時刻站在他人的立場思考問題，此舉也會積累更多支持的力量，當你進入乾涸之地時便會迎來及時雨的解救。
+
+木星對雙魚座的愛情、合作夥伴也起到促進作用，愛情的力量可以讓你變得完美，對方的鞭策能夠讓你明確人生方向，正確看待人生的起起落落。在合作夥伴的帶動下，雙魚座更能敏銳地察覺到市場中存在的風險，也更能準確地捕捉到發展的契機。而海王星和土星讓雙魚座的人變得務實，當你發覺戀人、合作方不能給你帶來實質性的幫助時，那麼你可能會選擇終結雙方的關係。
+
+總的來說，這一年是青雲直上，還是一步步走向失敗，就要看雙魚座的個人心態和能力了。
+
+
+原文網址：https://read01.com/oeeG24.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U30-Na-FhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1588" y="938.68065967016503"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="yl2-sM-qoP">
+        <scene sceneID="uCf-Cf-ZmN">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xN0-0N-ANn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="laJ-Ct-NSb">
+                        <barButtonItem key="backBarButtonItem" title="2017星座運勢" id="AIk-1q-AkX"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="7fj-dd-HQx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="k0g-va-AWX" kind="relationship" relationship="viewControllers" id="rvD-7Z-6lw"/>
+                        <segue destination="e3c-w4-t4q" kind="relationship" relationship="viewControllers" id="cK1-i7-P65"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiG-yf-EOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="984.79999999999995" y="-326.08695652173918"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="zodiac_signs_zodiac_symbols_11248_1080x1920" width="1080" height="1920"/>
     </resources>
 </document>
